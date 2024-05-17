@@ -1,19 +1,16 @@
-/* General styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: white;/* Strong Green */
-  color: #F7CAC9; /* Soft Pink */
+  background-color: white;
+  color: #F7CAC9;
   overflow-x: hidden; 
 }
 
-/* App container */
 .app {
   display: flex;
   height: 100vh;
 }
 
-/* Sidebar styles */
 .sidebar {
   width: 20vw;
   background-color: white;
@@ -22,6 +19,7 @@ body {
   flex-direction: column;
   gap: 20px;
   color: #A121F2;
+  position: relative;
 }
 
 .logo {
@@ -43,7 +41,7 @@ body {
   display: block;
   width: 100%;
   padding: 12px 20px;
-  background-color: #A121F2; /* Bold Indigo */
+  background-color: #A121F2;
   color: white;
   border: none;
   border-radius: 6px;
@@ -54,19 +52,16 @@ body {
 }
 
 .notes-button:hover {
-  background-color: #9f04ca; /* Darker Indigo */
+  background-color: #9f04ca;
 }
 
-/* Main content styles */
 .main-content {
   flex: 1;
   margin-top: 20px;
   margin-right: 20px;
   border-radius: 8px;
-  width : 80vw;
+  width: 80vw;
   padding: 0px;
-  /* background-color: #A121F2; */
-
 }
 
 .navbar {
@@ -74,17 +69,17 @@ body {
   display: flex;
   align-items: center;
   height: 40px;
-  color: white ;
+  color: white;
   border-top-left-radius: 8px;
-  background-color: #B039F6 ;
+  background-color: #B039F6;
 }
 
-.subdu{
+.subdu {
   background-color: white;
 }
 
 .navbar-button {
-  color : white;
+  color: white;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -100,12 +95,11 @@ body {
   margin-left: auto;
 }
 
-/* Cards section styles */
 .cards-section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: calc(100vh - 100px); /* Adjust the value based on your navbar height */
+  height: calc(100vh - 100px);
   overflow-y: auto;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -124,7 +118,7 @@ body {
 .card-header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Evenly space the items */
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 
@@ -136,24 +130,24 @@ body {
 .card-info h2 {
   color: #1e1e1e;
   margin: 0;
-  margin-left: 10px; /* Add space between logo and heading */
-  white-space: nowrap; /* Prevent heading from wrapping */
-  overflow: hidden; /* Hide any overflow */
-  text-overflow: ellipsis; /* Show ellipsis if heading exceeds space */
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sub {
   display: flex;
   margin-top: 40px;
-  flex-direction: column; /* Arrange items vertically */
-  align-items: center; /* Align items horizontally centered */
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin-left: 10px;
 }
 
 .card-info p {
   margin: 0;
-  margin-left: auto; /* Align the time to the extreme right */
+  margin-left: auto;
 }
 
 .card-info .time {
@@ -162,9 +156,9 @@ body {
 }
 
 .card-logo {
-  width: 75px; /* Adjust the width as needed */
-  height: 75px; /* Adjust the height as needed */
-  object-fit: contain; /* Fit the image inside the container without distorting its aspect ratio */
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
 }
 
 .card-section {
@@ -172,9 +166,8 @@ body {
 }
 
 .button-group {
-  margin: 12px; /* Adjust spacing between buttons */
-  margin-left: 10px; /* Adjust to align buttons with the label */
-  
+  margin: 12px;
+  margin-left: 10px;
 }
 
 .tag-button {
@@ -192,13 +185,13 @@ body {
   color: #f2f2f2;
 }
 
-.tagline{
+.tagline {
   display: flex;
   flex-direction: row;
 }
 
 .small-text {
-  font-size: 13px; /* Adjust the font size as desired */
+  font-size: 13px;
   font-weight: 100;
 }
 
@@ -207,7 +200,7 @@ body {
   color: #A121F2;
 }
 
-.dark-mode .navbar-button{
+.dark-mode .navbar-button {
   color: #A121F2;
 }
 
@@ -217,16 +210,14 @@ body {
   color: #ffffff;
 }
 
-.dark-mode .card-info h2{
+.dark-mode .card-info h2 {
   color: #ffffff;
-  
 }
 
 .dark-mode .sidebar {
-  background-image: url('bckee.jpg'); /* Background image URL */
-  background-size: cover; /* Cover the entire container */
+  background-image: url('bckee.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
-  
 }
 
 .dark-mode .navbar {
@@ -234,11 +225,11 @@ body {
   border: #A121F2 1px solid;
 }
 
-.dark-mode .card-section{
+.dark-mode .card-section {
   color: #ffffff;
 }
 
-.dark-mode .subdu{
+.dark-mode .subdu {
   background-color: #06050A;
 }
 
@@ -258,52 +249,51 @@ body {
   transition: background-color 0.3s;
 }
 
-.dark-mode .tag-button:hover{
+.dark-mode .tag-button:hover {
   background-color: #050000;
   color: #A121F2;
 }
+
 .sub a {
-  color: #ffffff; /* Change link color as needed */
-  text-decoration: none; /* Remove underline */
-  font-weight: bold; /* Make the link bold */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .sub a:hover {
-  color: #B039F6; /* Add underline on hover */
+  color: #B039F6;
 }
 
-
-/* Media Queries for Sidebar */
 @media screen and (max-width: 768px) {
-  #root{
+  #root {
     width: 100%;
   }
 
-  .body{
-    margin: 0 px;
-    padding : 0 px;
+  .body {
+    margin: 0;
+    padding: 0;
   }
   
   .app {
     margin: 2vw;
     display: flex;
     align-items: center;
-    flex-direction: column; /* Change to column for responsiveness */
+    flex-direction: column;
     height: 100vh;
   }
 
-  .sub{
+  .sub {
     width: 100%;
     align-items: flex-start;
   }
 
-  .res{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: right;
-  width: 100%;
+  .res {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: right;
+    width: 100%;
   }
 
   .time {
@@ -312,21 +302,22 @@ body {
     align-items: flex-start;
     justify-content: left;
   }
-  .notes-button{
-    width : 40vmax;
+
+  .notes-button {
+    width: 40vmax;
   }
 
-  .dark-mode .sidebar{
-    background-image: url('bckee.jpg'); /* Background image URL */
-    background-size: cover; /* Cover the entire container */
-    background-size: cover; /* Cover the entire container */
+  .dark-mode .sidebar {
+    background-image: url('bckee.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
-  .main-content{
+  .main-content {
     width: 100%;
     margin-right: 2vw;
   }
+
   .sidebar {
     width: 100%;
     align-items: center;
@@ -351,5 +342,4 @@ body {
     height: auto;
     max-height: calc(100vh - 150px);
   }
-
 }
