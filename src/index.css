@@ -1,0 +1,354 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;/* Strong Green */
+  color: #F7CAC9; /* Soft Pink */
+  overflow-x: hidden; 
+}
+
+/* App container */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 20vw;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #A121F2;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.canvas-heading {
+  display: flex;
+  flex-direction: row;
+}
+
+.canvas-heading h1 {
+  margin: 0;
+}
+
+.notes-button {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #A121F2; /* Bold Indigo */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.6vmax;
+  transition: background-color 0.3s ease;
+}
+
+.notes-button:hover {
+  background-color: #9f04ca; /* Darker Indigo */
+}
+
+/* Main content styles */
+.main-content {
+  flex: 1;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 8px;
+  width : 80vw;
+  padding: 0px;
+  /* background-color: #A121F2; */
+
+}
+
+.navbar {
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  color: white ;
+  border-top-left-radius: 8px;
+  background-color: #B039F6 ;
+}
+
+.subdu{
+  background-color: white;
+}
+
+.navbar-button {
+  color : white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10px;
+}
+
+.navbar-button:hover {
+  text-decoration: underline;
+}
+
+.dark-mode-switch {
+  margin-left: auto;
+}
+
+/* Cards section styles */
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: calc(100vh - 100px); /* Adjust the value based on your navbar height */
+  overflow-y: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #181818;
+  font-weight: bolder;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Evenly space the items */
+  margin-bottom: 10px;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+}
+
+.card-info h2 {
+  color: #1e1e1e;
+  margin: 0;
+  margin-left: 10px; /* Add space between logo and heading */
+  white-space: nowrap; /* Prevent heading from wrapping */
+  overflow: hidden; /* Hide any overflow */
+  text-overflow: ellipsis; /* Show ellipsis if heading exceeds space */
+}
+
+.sub {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Align items horizontally centered */
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.card-info p {
+  margin: 0;
+  margin-left: auto; /* Align the time to the extreme right */
+}
+
+.card-info .time {
+  margin-left: auto;
+  font-size: 1max;
+}
+
+.card-logo {
+  width: 75px; /* Adjust the width as needed */
+  height: 75px; /* Adjust the height as needed */
+  object-fit: contain; /* Fit the image inside the container without distorting its aspect ratio */
+}
+
+.card-section {
+  margin-bottom: 10px;
+}
+
+.button-group {
+  margin: 12px; /* Adjust spacing between buttons */
+  margin-left: 10px; /* Adjust to align buttons with the label */
+  
+}
+
+.tag-button {
+  font-size: 13px;
+  border: none;
+  background-color: #f2f2f2;
+  color: rgb(20, 20, 20);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.tag-button:hover {
+  background-color: #A121F2;
+  color: #f2f2f2;
+}
+
+.tagline{
+  display: flex;
+  flex-direction: row;
+}
+
+.small-text {
+  font-size: 13px; /* Adjust the font size as desired */
+  font-weight: 100;
+}
+
+.dark-mode {
+  background-color: #06050A;
+  color: #A121F2;
+}
+
+.dark-mode .navbar-button{
+  color: #A121F2;
+}
+
+.dark-mode .main-content {
+  background-color: #06050A;
+  border: #A121F2 2px solid;
+  color: #ffffff;
+}
+
+.dark-mode .card-info h2{
+  color: #ffffff;
+  
+}
+
+.dark-mode .sidebar {
+  background-image: url('bckee.jpg'); /* Background image URL */
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat;
+  
+}
+
+.dark-mode .navbar {
+  background-color: #06050A;
+  border: #A121F2 1px solid;
+}
+
+.dark-mode .card-section{
+  color: #ffffff;
+}
+
+.dark-mode .subdu{
+  background-color: #06050A;
+}
+
+.dark-mode .card {
+  color: #ffffff;
+  background-color: #06050A;
+  box-shadow: 0 2px 4px rgba(237, 16, 237, 0.1);
+}
+
+.dark-mode .tag-button {
+  font-size: 13px;
+  border: none;
+  background-color: #331645;
+  color: rgb(255, 253, 253);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.dark-mode .tag-button:hover{
+  background-color: #050000;
+  color: #A121F2;
+}
+.sub a {
+  color: #ffffff; /* Change link color as needed */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the link bold */
+}
+
+.sub a:hover {
+  color: #B039F6; /* Add underline on hover */
+}
+
+
+/* Media Queries for Sidebar */
+@media screen and (max-width: 768px) {
+  #root{
+    width: 100%;
+  }
+
+  .body{
+    margin: 0 px;
+    padding : 0 px;
+  }
+  
+  .app {
+    margin: 2vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Change to column for responsiveness */
+    height: 100vh;
+  }
+
+  .sub{
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .res{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: right;
+  width: 100%;
+  }
+
+  .time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+  }
+  .notes-button{
+    width : 40vmax;
+  }
+
+  .dark-mode .sidebar{
+    background-color: #06050A;
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat;
+  }
+
+  .main-content{
+    width: 100%;
+    margin-right: 2vw;
+  }
+  .sidebar {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .settings-container {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .dark-mode-switch {
+    margin-left: 0;
+  }
+
+  .cards-section {
+    height: auto;
+    max-height: calc(100vh - 150px);
+  }
+
+}
