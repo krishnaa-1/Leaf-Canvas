@@ -215,7 +215,7 @@ body {
 }
 
 .dark-mode .sidebar {
-  background-color: #06050A;
+  background-image: url(bckee.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
